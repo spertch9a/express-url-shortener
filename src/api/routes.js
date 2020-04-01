@@ -3,6 +3,8 @@ const router = Router();
 
 const { createShortUrl } = require('./controllers');
 
-router.get('/', createShortUrl);
+router.post('/url', createShortUrl);
+
+
 
 module.exports = router;
